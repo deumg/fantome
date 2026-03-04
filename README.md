@@ -31,7 +31,7 @@ e65ae05f9876566cd7988204788364ff
 
 ---
 
-The "patches" in `qobuz` and `japan` were created by "subtracting" the non-watermarked version from the respective watermarked version,
+The "patches" in `qobuz`, `japan` and `tme` were created by "subtracting" the non-watermarked version from the respective watermarked version,
 in other words you can obtain the the non-watermarked version by subtracting the corresponding "patches" from the watermarked version you have.
 For example:
 ```
@@ -106,6 +106,26 @@ sox -m japan.flac -v -1 japan_patch.flac non-watermarked.flac
 In fact you can get to any of the version mentioned from another mentioned one.
 All you need is a different series of `sox -m` commands, just that in some with `-v 1` instead of `-v -1`.
 (Note that `-v 1` makes a difference for `sox -m`, so do not think that you will get the same result with it omitted. Check out the man page for details.)
+
+---
+
+The MD5s of the version that is currently available on Kuwo Music and VIPER HiFi
+(hence most likely also QQ Music and KuGou Music; although for reasons not necessarily all tracks are available in 24 bit / 96 kHz):
+```
+9f72d23c87a824023ae635b93d1cfec1
+1457811a1e0966264fe541d3541a0023
+9be6e9d290bf37f50be014b99e8c25c3
+6d0ab20151c120a072bf2d723db13247
+3b4170ae4ef851934b5f47b9a00dbf63
+a96ff2a9bcbcc9bf938447987ba2393b
+195e11b3fb8a7a1e6dbe36b299181830
+669ddfd355bcf9442577c6b6db79c3c5
+f7112a74b96a05a53384c57675579381
+30dbd30a44d63070f5ad0749ed1d5471
+65148e59f4040830471a0ecd1a09f23f
+```
+Patches in `tme` are for this version.
+(As you may have noticed, the non-watermarked version of track 01 (道) is for some reason "leaked" to these stores, so no patch has been made for it.)
 
 ---
 
